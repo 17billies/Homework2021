@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1615435016 source:c:\kitty\code\hw12134\main.c
+	<stdio.h>
+	<stdlib.h>
+
