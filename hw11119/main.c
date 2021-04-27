@@ -26,7 +26,7 @@ int main(void){
     if (i1>=i2){
         int sum[i1+1];
         for(int n=0;n<=i1;n++){
-            sum[n]=((two1[n]^two2[n])^carry);
+            sum[n]=((two1[n]^two2[n])^carry); //^=XOR(1^1=0)
             carry=(two1[n]&two2[n])|(two1[n]&carry)|(two2[n]&carry);
             if(carry==1){
                 count+=1;}
