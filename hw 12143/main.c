@@ -12,7 +12,7 @@ int main() {
     for( int i = 0 ; i < t ; i++ ){
         int q;
         scanf( "%d", &q );
-        printf( "%d is at index: %d\n", q, BS(input,q, n-1) );
+        printf( "%d is at index: %d\n", q, BS(input,q, n) );
     }
 
 

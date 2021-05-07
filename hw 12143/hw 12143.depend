@@ -12,3 +12,14 @@
 	<stdio.h>
 	<stdlib.h>
 
+1620414393 source:c:\kitty\homework2021\hw 12143\main.c
+	<stdio.h>
+	"12143.h"
+
+1620189404 c:\kitty\homework2021\hw 12143\12143.h
+	<stdio.h>
+	<stdlib.h>
+
+1620415052 source:c:\kitty\homework2021\hw 12143\branch.c
+	"12143.h"
+

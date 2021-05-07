@@ -1,19 +1,23 @@
-#include "function.h"
-int t=0;
-int BS(int input[200],int a, int n);
-int BS(int input[200],int a, int n){
+#include "12143.h"
 
-    int mid =(t+n)/2;     //0 1 2 3 4 5 6 7 8 9
-    if(input[mid]<a){
-        t=mid+1;
-        BS(input,a,n);
+int BS(int *input,int a, int n);
+int BS(int *input,int a, int n){
+    int R,L,answer,mid;
+    L=0;
+    R=n;
+
+    while(L<R){
+        int mid =(R+L)/2;
+        if(input[mid]>a){
+            R=mid;
+        }
+        else if(input[mid]<a){
+            L=mid;
+        }
+        else{
+            answer=mid;
+            break;
+        }
     }
-    else if(input[mid]>a){
-        t=0;
-        BS(input,a,mid-1);
-    }
-    else if(input[mid]==a){
-        t=0;
-        return mid;
-    }
+    return answer;
 }
