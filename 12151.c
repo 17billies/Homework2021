@@ -11,6 +11,7 @@ int main(){
             scanf("%d",&s[i][j]);
             if(s[i][j]>max){
                 max=s[i][j];
+            //determine the max of the row
             }
         }
         con[i]=max;
@@ -20,6 +21,7 @@ int main(){
         for(i=0;i<n;++i){
             if(s[i][j]<min){
                 min=s[i][j];
+            //determine the min of the column(switch the i and j)
             }
         }
         con[n+j]=min;
