@@ -1,5 +1,5 @@
 #include<stdio.h>
-long long int binary_search(long long int f,long long int* num, int n);//*在宣告為存取指標型態
+long long int binary_search(long long int f,long long int* num, int n);//* represent a pointer to a variable whose datatype is integer,we cannot pass an array by value to a function in C
 long long int front[1000006],back[1000006];
 int main(){
     int n,k,q;//n integers(10^6),left shift k slots,q testcase for f(10^6)
